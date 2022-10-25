@@ -1,0 +1,143 @@
+*{
+    margin:0 auto;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+#menu{
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    width:400px;
+    text-align:center;
+    margin-bottom:30px;
+}
+#menu a{
+    display:flex;
+    text-decoration:none;
+    padding:10px 30px;
+    background:#eee;
+    border-radius:6px;
+    font-weight:bold;
+    color:blueviolet;
+}
+#menu a:hover{
+    background:blueviolet;
+    color:#fff;
+}
+
+#contents h1{
+    text-align:center;
+    margin-bottom:15px;
+    border-top:1px dotted #aaa;
+    padding-top:30px;
+}
+
+#contents table{
+    width:100%;
+    max-width:500px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius:6px;
+    overflow: hidden;
+}
+#contents thead tr{
+    background:#ddd;
+    color:blueviolet;
+}
+#contents thead th{
+    text-align:left;
+    padding:12px 10px !important;
+}
+#contents tbody td{
+    padding:16px 10px !important;
+    background:#eee;
+    border-bottom:1px solid #fff;
+}
+#contents tbody td a{
+    border-radius:3px;
+    padding:8px;
+    text-decoration:none;
+    background:#fff;
+}
+#contents tbody td a:hover{
+    background:blueviolet;
+}
+
+#contents .menuBack{
+    margin-top:15px;
+    display:flex;
+    flex-wrap:wrap;
+    width:210px;
+}
+#contents .menuBack a,
+#contents > a{
+    margin:0 auto;
+    display:flex;
+    width:100%;
+    max-width:100px;
+    justify-content: center;
+    border-radius:4px;
+    background:#fff;
+    padding:12px 0px;
+    text-decoration:none;
+    border:2px solid darkgray;
+}
+#contents .menuBack a:hover,
+#contents > a:hover{
+    border:2px solid crimson;
+    color:crimson;
+}
+
+#contents form{
+    width:100%;
+    margin-top:25px;
+    margin-bottom:25px;
+    background:#eee;
+    padding:30px;
+    max-width:500px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius:6px;
+    overflow: hidden;
+}
+
+#contents form label{
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+#contents form select,
+#contents form input{
+    padding:10px 15px;
+    border:1px solid #ddd;
+    width:100%;
+    border-radius:4px;
+}
+
+#contents form .field:nth-of-type(4){display:flex;flex-wrap:wrap;}
+#contents form .field:nth-of-type(4) label:nth-of-type(1){width:100%;}
+#contents form .field:nth-of-type(4) label{width:fit-content;}
+#contents form .field:nth-of-type(4) input{width:fit-content;}
+
+#confents form .actions{
+    margin-top:150px !important;
+}
+
+
+/*
+#contents p{
+    max-width:200px;
+    width:100%;
+    padding:15px;
+    background:#eee;
+    text-align:center;
+    margin:0 auto;
+    display:flex;
+    margin-bottom:4px;
+    border-radius:6px;
+}
+#contents p#notice{
+    padding:0px;
+    background:initial;
+}*/

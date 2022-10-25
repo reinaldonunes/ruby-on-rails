@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Planetas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @planets.each do |planet| %>
+      <tr>
+        <td><%= planet.name %></td>
+        <td><%= link_to 'Show', planet %></td>
+        <td><%= link_to 'Editar', edit_planet_path(planet) %></td>
+        <td><%= link_to 'Deletar', planet, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo Planeta', new_planet_path %>

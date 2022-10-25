@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Planeta</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= @alien.name %></td>
+        <td><%= @alien.age %></td>
+        <td><%= @alien.try(:planet).try(:name) %></td>
+      </tr>
+  </tbody>
+</table>
+
+<div class="menuBack">
+  <%= link_to 'Editar', edit_alien_path(@alien) %>
+  <%= link_to 'Voltar', aliens_path %>
+</div>

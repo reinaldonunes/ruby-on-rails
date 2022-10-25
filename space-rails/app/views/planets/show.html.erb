@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= @planet.name %></td>
+      </tr>
+  </tbody>
+</table>
+
+<div class="menuBack">
+  <%= link_to 'Editar', edit_planet_path(@planet) %>
+  <%= link_to 'Voltar', planets_path %>
+</div>
