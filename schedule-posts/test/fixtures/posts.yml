@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  schedule: 2022-11-09 20:48:39
+  status: false
+
+two:
+  title: MyString
+  schedule: 2022-11-09 20:48:39
+  status: false
